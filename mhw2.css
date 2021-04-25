@@ -1,0 +1,156 @@
+.paragrafo{
+    margin-bottom: 10px;
+}
+
+#elementi h1,#preferiti h1{
+    font-size: 2.8em;
+    color:black;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin:10px;
+    text-transform: capitalize;
+}
+
+#preferiti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preferiti p{
+    font-size: 2.2em;
+    color: gray;
+    margin: 10px;
+    text-align: center;
+}
+
+#elementi {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px;
+}
+
+#elementi p{
+    font-size: 1.5em;
+    color: black;
+    margin: 15px;
+    
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:500px){
+    #preferiti p{
+        font-size: 1.5em;
+    }
+
+    #elementi h1,#preferiti h1{
+        font-size:2em;
+    }
+
+    #elementi p{
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    #elementi{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid div{
+    background-color: #f4f4f4;
+    border: 2px solid rgb(63, 63, 63);
+    width: 18%;
+    height: 100%;
+    
+    padding: 10px;
+    margin: 0px 5px 20px 5px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid div h3{
+    margin: 0px 0px 10px 0px;
+
+    color: rgb(68, 160, 160);
+    font-size: 1.2em;
+    text-transform: capitalize;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.grid div h3 img{
+    margin: 0px;
+    width: 13%;
+
+    cursor: pointer;
+}
+
+.grid div button{
+    font-size: 1em;
+    text-transform: capitalize;
+
+    cursor: pointer;
+}
+
+.grid div img{
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+.grid div p{
+    color:rgb(73, 72, 72);
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.grid div em{
+    color: rgb(68, 160, 160);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#risultatiPreferiti div{
+    width: 16%;
+}
+
+
+@media (max-width: 500px){
+    .grid div,#risultatiPreferiti div{
+        width: 38%;
+    }
+
+    #risultatiPreferiti div{
+        padding-bottom: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .grid div h3{
+        font-size: 1em;
+    }
+
+    .grid div button{
+        font-size: 0.8em;
+    }
+}
+
+.hidden{
+    display: none;
+}
